@@ -62,7 +62,7 @@ nav {
 .nav-name {
   color: var(--text);
   text-decoration: none;
-  font-size: var(--size-base);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: 400;
   letter-spacing: 0.02em;
 }
@@ -365,7 +365,13 @@ footer {
   }
 
   nav {
-    padding: var(--space-sm) var(--space-md);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: var(--space-xs) var(--space-md);
+  }
+
+  .nav-name {
+    flex: 1 0 100%;
   }
 
   nav ul {
