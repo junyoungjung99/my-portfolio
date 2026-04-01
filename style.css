@@ -161,9 +161,109 @@ h2 {
   display: block;
 }
 
+.project-status {
+  font-size: var(--size-sm);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
 .project-card h3 {
   font-size: var(--size-base);
   font-weight: 400;
+}
+
+/* ─── Selected Works (teaser) ────────────────────────────────── */
+.view-all {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.view-all:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+/* ─── Publications ───────────────────────────────────────────── */
+.pub-group {
+  margin-bottom: var(--space-lg);
+}
+
+.pub-group-label {
+  font-size: var(--size-sm);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.pub-list--teaser {
+  gap: var(--space-sm);
+}
+
+.pub-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pub-title {
+  font-size: var(--size-base);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+}
+
+.pub-meta {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pub-venue::after {
+  content: ' ·';
+}
+
+.pub-links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 0.2rem;
+}
+
+.pub-link {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.pub-link:hover {
+  color: var(--text);
+  border-color: var(--text);
 }
 
 /* ─── About ──────────────────────────────────────────────────── */
