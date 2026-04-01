@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Start of every session
+
+Read these files before doing anything else:
+- `progress.md` — what has been built and how
+- `nextsteps.md` — outstanding tasks and content still to fill in
+
 ## Project overview
 
 Single-page personal portfolio for an HCI Master's student (potentially PhD-bound), targeted at the HCI research community with a focus on Human-AI Interaction. Built with plain HTML and CSS — no frameworks, no build tools, no dependencies.
