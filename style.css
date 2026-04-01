@@ -53,9 +53,18 @@ nav {
   right: 0;
   z-index: 100;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   padding: var(--space-sm) var(--space-md);
   background-color: var(--bg);
+}
+
+.nav-name {
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--size-sm);
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 nav ul {
